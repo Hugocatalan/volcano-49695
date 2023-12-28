@@ -1,0 +1,159 @@
+
+
+/* logo del nav */
+.logo img{
+    height: 4.375rem; /* Establece una altura fija para las imágenes dentro de la clase .logo. */
+    width: auto; /* El ancho de la imagen se ajustará automáticamente para mantener la proporción de aspecto. */
+    transition: 0.5s; /* Añade una transición suave de 0.5 segundos para los cambios de estilo. */
+    padding: .625rem; /* Añade un relleno alrededor de la imagen. */
+}
+
+.logo img:hover{
+    transform: scaleX(1.2); /* Aumenta el tamaño de la imagen en un 20% horizontalmente al pasar el mouse. */
+}
+
+
+.bg-mio{
+    background-color: black;
+}
+.bg-otro{
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 3.4375rem;
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    bottom: 2.875rem;
+    right: 2.875rem;
+    background: #0df053;
+    color: #fff;
+    border-radius: 3.125rem;
+    text-align: center;
+    font-size: 1.875rem;
+    box-shadow: 0rem .0625rem .625rem rgba(0, 0, 0, 0.3);
+    z-index: 100;
+
+}
+.btn-wsp:hover{
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff;
+}
+
+/* body */
+body{
+    display: grid;
+    min-height: 100vh;
+    background-image: url("../asset/frente-gym.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+carousel-inner{
+    height: 31.25rem;
+    width: 43.75rem;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.815);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footerContainer{
+    width: 100%;
+    padding: 4.375rem 1.875rem 1.25rem;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+text-decoration: none;
+padding: .625rem;
+background-color: white;
+margin: .625rem;
+border-radius: 50%;
+
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* evecto en iconos */
+.socialIcons a:hover{
+background-color: black;
+transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 1.875rem 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 1.25rem;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color:black ;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.footerBottom p{
+color: white;
+}
+
+.disen{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+    font-weight: 400;
+    margin: .375rem .3125rem;
+}
+
+@media (max-width: 43.75rem){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li a{
+        width: 100%;
+        text-align: center;
+        margin: .625rem;
+}
+}
