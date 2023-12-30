@@ -1,3 +1,4 @@
+
 /* logo del nav */
 .logo img{
     height: 4.375rem; /* Establece una altura fija para las imágenes dentro de la clase .logo. */
@@ -42,16 +43,37 @@
 
 /* body */
 body{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-image: url("../asset/frente-gym.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-template-rows: 1fr auto;
 }
+
+.youtube{
+    display: flex;
+    position: relative;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+}
+iframe{
+    width: 40rem;
+    height: 20.25rem;
+}
+
+
+
 carousel-inner{
-    height: 31.25rem;
     width: 43.75rem;
+    height: 31.25rem;
+   
 }
 
 img{
